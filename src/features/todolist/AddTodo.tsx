@@ -8,7 +8,7 @@ const AddTodo = () => {
     const [title, setTitle] = useState('');
 
     const handleAddTodo = () => {
-        dispatch(addTodo({ title: title, completed: false }));
+        dispatch(addTodo({ title: title, completed: false, status: '' }));
     };
 
     return (

@@ -6,8 +6,8 @@ const TodoList = () => {
 
     return (
         <div className='todo-list'>
-            {data.map((item) => (
-                <TodoItem title={item.title} completed={item.completed} />
+            {data.map((item, index) => (
+                <TodoItem key={index} index={index} title={item.title} completed={item.completed} />
             ))}
         </div>
     );
